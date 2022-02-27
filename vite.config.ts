@@ -1,20 +1,20 @@
-import { defineConfig } from 'vite'
-import { resolve } from 'path';
+import { defineConfig } from "vite";
+import { resolve } from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/vite-lit-element-starter/',
+  base: "/vite-lit-element-starter/",
   build: {
-    outDir: 'build',
+    outDir: "build",
     lib: {
-      entry: 'src/my-element.ts',
-      formats: ['es'],
+      entry: "src/my-element.ts",
+      formats: ["es"],
     },
     manifest: true,
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'index.html'),
+        main: resolve(__dirname, "index.html"),
       },
     },
   },
-})
+});
