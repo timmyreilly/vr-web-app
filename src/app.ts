@@ -18,7 +18,7 @@ export class VrApp extends LitElement {
 
             .main__left {
                 width: 50%;
-                text-align: center;
+                text-align: right;
             }
 
             h1 {
