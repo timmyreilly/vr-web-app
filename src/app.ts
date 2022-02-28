@@ -30,12 +30,12 @@ export class VrApp extends LitElement {
     render() {
         return html`
             <div class="main">
-                <div class="main__left">
+                <!-- <div class="main__left">
                     <h1>Rocket 3</h1>
-                </div>
+                </div> -->
                 <div class="main__right">
                     <model-viewer
-                        style="height: 100%; width: 50%; position:absolute"
+                        style="height: 100%; width: 100%; position:absolute"
                         bounds="tight"
                         src=${rocketUrl}
                         ar-modes="webxr scene-viewer quick-look"
