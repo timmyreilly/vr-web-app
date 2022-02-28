@@ -1,10 +1,13 @@
 {
   "index.html": {
-    "file": "assets/main.15e64d1c.js",
+    "file": "assets/main.0795b7ce.js",
     "src": "index.html",
     "isEntry": true,
     "imports": [
       "_vendor.16442617.js"
+    ],
+    "assets": [
+      "assets/rocket.86cef859.glb"
     ]
   },
   "_vendor.16442617.js": {
