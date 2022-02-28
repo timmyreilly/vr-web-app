@@ -50,7 +50,7 @@ export class VrApp extends LitElement {
                         <button
                             slot="ar-button"
                             id="ar-button"
-                            style="position: absolute; bottom: 0; right: 0"
+                            style="position: absolute; bottom: 2rem; right: 2rem"
                         >
                             View in your space
                         </button>
