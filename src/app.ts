@@ -1,4 +1,4 @@
-import { LitElement, html, customElement } from "lit-element";
+import { LitElement, html, customElement, css } from "lit-element";
 import "@google/model-viewer";
 /**
  * An example element.
@@ -8,24 +8,52 @@ import "@google/model-viewer";
  */
 @customElement("vr-app")
 export class VrApp extends LitElement {
-    render() {
-        return html`
-            <model-viewer
-                style="height:100vh; width: 100%"
-                alt="Neil Armstrong's Spacesuit from the Smithsonian Digitization Programs Office and National Air and Space Museum"
-                src="src/assets/NeilArmstrong.glb"
-                ar-modes="webxr scene-viewer quick-look"
-                environment-image="src/assets/moon_1k.hdr"
-                seamless-poster
-                shadow-intensity="1"
-                camera-controls
-            ></model-viewer>
-        `;
-    }
+  static get styles() {
+    return css`
+      .main {
+        display: flex;
+      }
+
+      .main__left {
+        width: 50%;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 10rem;
+        letter-spacing: -0.5rem;
+      }
+    `;
+  }
+  render() {
+    return html`
+      <div class="main">
+        <div class="main__left">
+          <h1>Rocket 3</h1>
+        </div>
+        <div class="main__right">
+          <model-viewer
+            style="height: 100%; width: 50%; position:absolute"
+            bounds="tight"
+            src="src/assets/models/rocket.glb"
+            ar
+            ar-modes="webxr scene-viewer quick-look"
+            camera-controls
+            shadow-intensity="1"
+            autorotate
+          >
+            <div class="progress-bar hide" slot="progress-bar">
+              <div class="update-bar"></div>
+            </div>
+          </model-viewer>
+        </div>
+      </div>
+    `;
+  }
 }
 
 declare global {
-    interface HTMLElementTagNameMap {
-        "vr-app": VrApp;
-    }
+  interface HTMLElementTagNameMap {
+    "vr-app": VrApp;
+  }
 }
