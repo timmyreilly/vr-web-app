@@ -1,7 +1,13 @@
 {
   "index.html": {
-    "file": "vite-lit-element-starter.es.js",
+    "file": "assets/main.15e64d1c.js",
     "src": "index.html",
-    "isEntry": true
+    "isEntry": true,
+    "imports": [
+      "_vendor.16442617.js"
+    ]
+  },
+  "_vendor.16442617.js": {
+    "file": "assets/vendor.16442617.js"
   }
 }
