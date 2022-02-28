@@ -47,7 +47,11 @@ export class VrApp extends LitElement {
                         <div class="progress-bar hide" slot="progress-bar">
                             <div class="update-bar"></div>
                         </div>
-                        <button slot="ar-button" id="ar-button">
+                        <button
+                            slot="ar-button"
+                            id="ar-button"
+                            style="position: absolute; bottom: 0; right: 0"
+                        >
                             View in your space
                         </button>
                         <div id="ar-prompt">
