@@ -14,12 +14,12 @@ import{c as a,L as c,a as d,h as f}from"./vendor.16442617.js";const u=function()
             }
         `}render(){return f`
             <div class="main">
-                <div class="main__left">
+                <!-- <div class="main__left">
                     <h1>Rocket 3</h1>
-                </div>
+                </div> -->
                 <div class="main__right">
                     <model-viewer
-                        style="height: 100%; width: 50%; position:absolute"
+                        style="height: 100%; width: 100%; position:absolute"
                         bounds="tight"
                         src=${p}
                         ar-modes="webxr scene-viewer quick-look"
