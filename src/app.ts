@@ -34,6 +34,8 @@ export class VrApp extends LitElement {
                     <h1>Rocket 3</h1>
                 </div> -->
                 <div class="main__right">
+                    <hud-viewer>
+                    </hud-viewer>
                     <model-viewer
                         style="height: 100%; width: 100%; position:absolute"
                         bounds="tight"
